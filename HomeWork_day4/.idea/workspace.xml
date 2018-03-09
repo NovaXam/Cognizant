@@ -13,16 +13,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Person.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Student.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -84,11 +74,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestP07.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestP07.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TestP07.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="352">
               <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="P15.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/P15.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestP15.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TestP15.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,16 +132,6 @@
                 <element signature="e#226#227#0" expanded="true" />
                 <element signature="e#305#306#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Staff.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Staff.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -168,12 +172,15 @@
         <option value="$PROJECT_DIR$/src/testP09.java" />
         <option value="$PROJECT_DIR$/src/P07.java" />
         <option value="$PROJECT_DIR$/src/TestP07.java" />
+        <option value="$PROJECT_DIR$/src/TestP15.java" />
+        <option value="$PROJECT_DIR$/src/P15.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="480" />
     <option name="y" value="23" />
-    <option name="width" value="1440" />
+    <option name="width" value="960" />
     <option name="height" value="873" />
   </component>
   <component name="ProjectView">
@@ -248,7 +255,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestP07">
+  <component name="RunManager" selected="JUnit.TestP15">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -313,6 +320,27 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestP07" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestP15" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="HomeWork_day4" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestP15" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -531,18 +559,20 @@
       <listeners />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.Tests" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.testP09" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.TestP07" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestP15" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestP07" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.testP09" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Tests" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Main" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestP15" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestP07" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.testP09" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Tests" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -560,39 +590,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestP07 - 2018.03.09 at 09h 08m 04s.xml">
-      <configuration name="TestP07" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestP07 - 2018.03.09 at 09h 09m 02s.xml">
-      <configuration name="TestP07" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestP07 - 2018.03.09 at 09h 09m 26s.xml">
-      <configuration name="TestP07" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestP07 - 2018.03.09 at 09h 20m 37s.xml">
-      <configuration name="TestP07" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestP07 - 2018.03.09 at 09h 21m 49s.xml">
       <configuration name="TestP07" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testP09 - 2018.03.08 at 20h 19m 39s.xml">
-      <configuration name="testP09" configurationId="JUnit" />
+    <history-entry file="TestP15 - 2018.03.09 at 09h 48m 42s.xml">
+      <configuration name="TestP15" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testP09 - 2018.03.08 at 20h 20m 27s.xml">
-      <configuration name="testP09" configurationId="JUnit" />
+    <history-entry file="TestP15 - 2018.03.09 at 09h 51m 23s.xml">
+      <configuration name="TestP15" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testP09 - 2018.03.08 at 20h 20m 44s.xml">
-      <configuration name="testP09" configurationId="JUnit" />
+    <history-entry file="TestP15 - 2018.03.09 at 09h 51m 59s.xml">
+      <configuration name="TestP15" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testP09 - 2018.03.08 at 20h 20m 54s.xml">
-      <configuration name="testP09" configurationId="JUnit" />
+    <history-entry file="TestP15 - 2018.03.09 at 09h 52m 19s.xml">
+      <configuration name="TestP15" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testP09 - 2018.03.08 at 20h 21m 00s.xml">
-      <configuration name="testP09" configurationId="JUnit" />
+    <history-entry file="TestP15 - 2018.03.09 at 09h 53m 58s.xml">
+      <configuration name="TestP15" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestP15 - 2018.03.09 at 09h 54m 11s.xml">
+      <configuration name="TestP15" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestP15 - 2018.03.09 at 09h 55m 06s.xml">
+      <configuration name="TestP15" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestP15 - 2018.03.09 at 09h 55m 43s.xml">
+      <configuration name="TestP15" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestP15 - 2018.03.09 at 09h 56m 16s.xml">
+      <configuration name="TestP15" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
+    <frame x="480" y="23" width="960" height="873" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -610,7 +640,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17095852" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2603486" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -912,6 +942,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestP15.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/P15.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
