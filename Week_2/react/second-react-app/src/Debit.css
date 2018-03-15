@@ -1,0 +1,43 @@
+.DebitClass {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.debitForm {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 350px;
+    height: 100px;
+    background-color: rgb(226, 255, 226);
+}
+
+li.debitItem {
+    display: inline-block;
+    padding: 10px;
+    background: rgb(250, 255, 255);
+    width: 25rem;    
+    margin: 0.5rem;
+    text-align: center;
+};
+
+p.item {
+    -webkit-margin-after:0em;
+    -webkit-margin-before:0em;
+    display: inline-block;
+    margin: 0px;
+    
+};
+
+.debits {
+    display: inline-flex;
+    flex-direction: column;
+    /* margin: 10px; */
+    list-style: none;
+    line-height: 0px;
+};
+
+
+
+
