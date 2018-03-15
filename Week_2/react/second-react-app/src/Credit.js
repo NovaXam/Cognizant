@@ -28,29 +28,29 @@ class Credit extends Component {
 
     creditDescHandler(e) {
         e.preventDefault();
-        const newDescription = {...this.state.debItem};
+        const newDescription = {...this.state.credItem};
         const descId = e.target.id;
         const descValue = e.target.value;
         newDescription[descId] = descValue;
         this.setState({
-            debItem: newDescription
+            credItem: newDescription
         });
     };
 
     creditAmountHandler(e) {
         e.preventDefault();
-        const newAmount = {...this.state.debItem};
+        const newAmount = {...this.state.credItem};
         const amountId = e.target.id;
         const debAmount = e.target.value;
         newAmount[amountId] = debAmount;
         this.setState({
-            debItem: newAmount
+            credItem: newAmount
         });
     };
 
     creditSubmitHandler(e) {
         e.preventDefault();
-        this.props.modifyDeb(this.state.debItem);
+        this.props.modifyCred(this.state.credItem);
         this.setState({
             showUp: "none"
         });  

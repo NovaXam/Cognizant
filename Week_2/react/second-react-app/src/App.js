@@ -27,6 +27,7 @@ class App extends Component {
     this.hashGenerator = this.hashGenerator.bind(this);
     this.modifyDebItem = this.modifyDebItem.bind(this);
     this.updateCreditAccountState = this.updateCreditAccountState.bind(this);
+    this.modifyCredItem = this.modifyCredItem.bind(this);
   };
 
   componentWillMount() {
@@ -69,7 +70,6 @@ class App extends Component {
   };
   
   mockLogIn(logInInfo) {
-    console.log(this);
     const newUser = {...this.state.currentUser};
     newUser.userName = logInInfo.userName;
     this.setState({currentUser: newUser});
@@ -84,6 +84,18 @@ class App extends Component {
     console.log(newObject);
     this.setState({
       debitsTitle: this.state.debitsTitle.concat(newObject)
+    });
+  };
+
+  modifyCredItem(newItem) {
+    const id = this.hashGenerator(newItem.description);
+    const date = new Date();
+    const newObject = newItem;
+    newObject.date = date.toString();
+    newObject.id = id;
+    console.log(newObject);
+    this.setState({
+      creditTitle: this.state.creditTitle.concat(newObject)
     });
   };
 
@@ -127,7 +139,7 @@ class App extends Component {
         <Credit 
           credTitle={this.state.creditTitle}
           accountBalance={this.state.accountBalance}
-          modifyDeb={this.modifyDebItem}
+          modifyCred={this.modifyCredItem}
         />
     );
 
