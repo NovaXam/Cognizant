@@ -5,6 +5,7 @@ import Home from './Home';
 import UserProfile from './UserProfile';
 import Login from './Login';
 import Debit from './Debit';
+import Credit from './Credit';
 import './App.css';
 
 import axios from 'axios';
@@ -18,12 +19,14 @@ class App extends Component {
         userName: 'bob_loblaw',
         memberSince: '08/23/99',
       },
-      debitsTitle: []
+      debitsTitle: [],
+      creditTitle: []
     };
     this.mockLogIn = this.mockLogIn.bind(this);
     this.updateAccountState = this.updateAccountState.bind(this);
     this.hashGenerator = this.hashGenerator.bind(this);
     this.modifyDebItem = this.modifyDebItem.bind(this);
+    this.updateCreditAccountState = this.updateCreditAccountState.bind(this);
   };
 
   componentWillMount() {
@@ -39,6 +42,7 @@ class App extends Component {
         axios("http://localhost:4000/credits")
           .then((res) => {
             res.data.map((elem) => {
+              this.updateCreditAccountState(elem);
               return credit += elem.amount;
             });
             return (debit - credit);
@@ -55,6 +59,13 @@ class App extends Component {
     this.setState({
       debitsTitle: this.state.debitsTitle.concat(elem)
     });
+  };
+
+  updateCreditAccountState(elem) {
+    this.setState({
+      creditTitle: this.state.creditTitle.concat(elem)
+    });
+    console.log(this.state.creditTitle);
   };
   
   mockLogIn(logInInfo) {
@@ -110,7 +121,16 @@ class App extends Component {
           accountBalance={this.state.accountBalance}
           modifyDeb={this.modifyDebItem}
         />
-    ); 
+    );
+    
+    const CreditComponent = () => (
+        <Credit 
+          credTitle={this.state.creditTitle}
+          accountBalance={this.state.accountBalance}
+          modifyDeb={this.modifyDebItem}
+        />
+    );
+
     return (
       <Router>
         <Switch>
@@ -118,6 +138,7 @@ class App extends Component {
           <Route exact path="/userProfile" render={UserProfileComp} />
           <Route exact path="/login" render={LogInComponent} />
           <Route exact path="/debit" render={DebitComponent} />
+          <Route exact path='/credit' render={CreditComponent} />
         </Switch>
       </Router>
     );

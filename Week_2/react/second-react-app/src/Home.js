@@ -11,6 +11,7 @@ class Home extends Component {
                 <Link to="/userProfile">User Profile</Link>
                 <AccountBalance accountBalance={this.props.accountBalance} />
                 <Link to="/debit"><button type="submit">Debit</button> </Link>
+                <Link to="/credit"><button type="submit">Credit</button> </Link>
             </div>
         )
     };
